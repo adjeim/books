@@ -7,8 +7,9 @@ var BookSchema = new Schema({
 		required: true
 	},
 	author: {
-		type: Schema.ObjectID,
-		ref: 'Author',
+		type: String,
+		// type: Schema.ObjectID,
+		// ref: 'Author',
 		required: true
 	},
 	published: {
@@ -18,7 +19,8 @@ var BookSchema = new Schema({
 		type: Date,
 		default: Date.now
 	},
-	keywords: Array
+	keywords: Array,
+	genre: String
 
 });
 
